@@ -1,4 +1,5 @@
 "use client";
+export const runtime = "edge";
 
 import { useInView } from "framer-motion";
 

@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
