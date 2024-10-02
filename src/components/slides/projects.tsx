@@ -57,7 +57,7 @@ export const ProjectsSlide = React.forwardRef<
           status: "live",
         },
         {
-          domain: "retest.caverne.io",
+          domain: "retest.cueva.io",
           title: "RETEST",
           description: "PRIVACY FIRST AB TESTING PLATFORM",
           status: "coming-soon",

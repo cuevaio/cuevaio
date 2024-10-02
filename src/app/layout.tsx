@@ -10,17 +10,17 @@ import { Fathom } from "@/components/fathom";
 import Noise from "@/components/noise";
 
 export const metadata: Metadata = {
-  title: "Anthony Cueva (caverne.io)",
+  title: "Anthony Cueva (cueva.io)",
   description: "Anthony Cueva is a software engineer based in Peru",
   openGraph: {
-    title: "Anthony Cueva (caverne.io)",
+    title: "Anthony Cueva (cueva.io)",
     description: "Anthony Cueva is a software engineer based in Peru",
     images: [
       {
-        url: "https://www.caverne.io/caverne_io_screenshot.png",
+        url: "https://www.cueva.io/cueva_io_screenshot.png",
         width: 1200,
         height: 630,
-        alt: "caverne.io",
+        alt: "cueva.io",
       },
     ],
   },
@@ -30,13 +30,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Anthony Cueva",
-  url: "https://caverne.io",
+  url: "https://cueva.io",
   sameAs: [
-    "https://www.linkedin.com/in/caverneio",
-    "https://www.x.com/caverneio",
-    "https://www.github.com/caverneio",
+    "https://www.linkedin.com/in/cuevaio",
+    "https://www.x.com/cuevaio",
+    "https://www.github.com/cuevaio",
   ],
-  email: "hi@caverne.io",
+  email: "hi@cueva.io",
   jobTitle: "Software Engineer",
 };
 

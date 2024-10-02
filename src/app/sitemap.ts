@@ -5,7 +5,7 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://caverne.io",
+      url: "https://cueva.io",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,

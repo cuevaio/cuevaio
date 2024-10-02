@@ -82,7 +82,7 @@ export const ContactSlide = React.forwardRef<
               await new Promise((r) => setTimeout(r, 100));
             }}
             whileTap={{ scale: 0.9 }}
-            href="mailto:hi@caverne.io"
+            href="mailto:hi@cueva.io"
             target="_blank"
             rel="noreferrer"
           >
@@ -96,7 +96,7 @@ export const ContactSlide = React.forwardRef<
               await new Promise((r) => setTimeout(r, 100));
             }}
             whileTap={{ scale: 0.9 }}
-            href="https://www.linkedin.com/in/caverneio/"
+            href="https://www.linkedin.com/in/cuevaio/"
             target="_blank"
             rel="noreferrer"
           >
@@ -110,7 +110,7 @@ export const ContactSlide = React.forwardRef<
               await new Promise((r) => setTimeout(r, 100));
             }}
             whileTap={{ scale: 0.9 }}
-            href="https://www.x.com/caverneio"
+            href="https://www.x.com/cuevaio"
             target="_blank"
             rel="noreferrer"
           >
@@ -124,7 +124,7 @@ export const ContactSlide = React.forwardRef<
               await new Promise((r) => setTimeout(r, 100));
             }}
             whileTap={{ scale: 0.9 }}
-            href="https://www.github.com/caverneio"
+            href="https://www.github.com/cuevaio"
             target="_blank"
             rel="noreferrer"
           >

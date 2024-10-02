@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://caverne.io/sitemap.xml",
+    sitemap: "https://cueva.io/sitemap.xml",
   };
 }
