@@ -18,3 +18,5 @@ I'm Anthony Cueva, a software engineer based in Peru 🇵🇪
 
 > [!NOTE]
 > Visit my site [cueva.io](https://www.cueva.io)
+
+:D
