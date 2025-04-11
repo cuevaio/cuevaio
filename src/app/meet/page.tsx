@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
+import Image from "next/image";
 
 export const runtime = "edge";
 export const revalidate = 0;
@@ -24,4 +25,8 @@ export const metadata: Metadata = {
 
 export default function MeetPage() {
   redirect("https://calendar.notion.so/meet/anthony-9n45j1rcc/4i9ij3lme");
+
+  return (
+    <Image src="/meet.png" alt="Schedule a Meeting" width={1200} height={630} />
+  );
 }
