@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 
 export const runtime = "edge";
-export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: "Schedule a Meeting with Anthony",
@@ -17,6 +16,7 @@ export const metadata: Metadata = {
         alt: "Schedule a Meeting",
       },
     ],
+    url: "https://cueva.io/calendar",
   },
   metadataBase: new URL("https://cueva.io"),
 };
