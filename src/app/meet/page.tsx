@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     description: "Book a time to meet with Anthony",
     images: [
       {
-        url: "/meet.png",
+        url: "/api/og/meet",
         width: 1200,
         height: 630,
-        alt: "Schedule a Meeting",
+        alt: "Schedule a Meeting with Anthony",
       },
     ],
   },
