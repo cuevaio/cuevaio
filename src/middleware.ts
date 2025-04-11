@@ -4,7 +4,10 @@ import { detectBot } from "./lib/detect-bot";
 
 export function middleware(request: NextRequest) {
   // Check if the path is /meet
-  if (request.nextUrl.pathname === "/meet") {
+  if (
+    request.nextUrl.pathname === "/meet" ||
+    request.nextUrl.pathname === "/cal"
+  ) {
     // Check if it's a bot
     if (detectBot(request)) {
       // For bots, let them access the page
@@ -21,5 +24,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: "/meet",
+  matcher: ["/meet", "/cal"],
 };
