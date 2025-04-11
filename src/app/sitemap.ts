@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://cueva.io",
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "hourly",
       priority: 1,
     },
   ];
