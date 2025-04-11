@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Schedule a Meeting with Anthony",
@@ -9,10 +8,10 @@ export const metadata: Metadata = {
     description: "Book a time to meet with Anthony",
     images: [
       {
-        url: "/api/og/meet",
+        url: "/meet.png",
         width: 1200,
         height: 630,
-        alt: "Schedule a Meeting with Anthony",
+        alt: "Schedule a Meeting",
       },
     ],
   },
@@ -20,5 +19,17 @@ export const metadata: Metadata = {
 };
 
 export default function MeetPage() {
-  redirect("https://calendar.notion.so/meet/anthony-9n45j1rcc/4i9ij3lme");
+  return (
+    <html lang="en">
+      <head>
+        <meta
+          httpEquiv="refresh"
+          content="0;url=https://calendar.notion.so/meet/anthony-9n45j1rcc/4i9ij3lme"
+        />
+      </head>
+      <body>
+        <p>Redirecting to scheduling page...</p>
+      </body>
+    </html>
+  );
 }
