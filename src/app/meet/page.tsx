@@ -1,4 +1,8 @@
 import { Metadata } from "next";
+import { redirect } from "next/navigation";
+
+export const runtime = "edge";
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: "Schedule a Meeting with Anthony",
@@ -19,17 +23,5 @@ export const metadata: Metadata = {
 };
 
 export default function MeetPage() {
-  return (
-    <html lang="en">
-      <head>
-        <meta
-          httpEquiv="refresh"
-          content="0;url=https://calendar.notion.so/meet/anthony-9n45j1rcc/4i9ij3lme"
-        />
-      </head>
-      <body>
-        <p>Redirecting to scheduling page...</p>
-      </body>
-    </html>
-  );
+  redirect("https://calendar.notion.so/meet/anthony-9n45j1rcc/4i9ij3lme");
 }
