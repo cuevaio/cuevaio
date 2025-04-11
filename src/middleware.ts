@@ -6,7 +6,8 @@ export function middleware(request: NextRequest) {
   // Check if the path is /meet
   if (
     request.nextUrl.pathname === "/meet" ||
-    request.nextUrl.pathname === "/cal"
+    request.nextUrl.pathname === "/cal" ||
+    request.nextUrl.pathname === "/calendar"
   ) {
     // Check if it's a bot
     if (detectBot(request)) {
@@ -24,5 +25,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/meet", "/cal"],
+  matcher: ["/meet", "/cal", "/calendar"],
 };
