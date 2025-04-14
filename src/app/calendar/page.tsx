@@ -27,7 +27,7 @@ export default function MeetPage() {
       <head>
         <meta
           httpEquiv="refresh"
-          content="0;url=https://calendar.notion.so/meet/anthony-9n45j1rcc/4i9ij3lme"
+          content="0;url=https://calendar.app.google/AvkEoN2ZSuvr6sWn8"
         />
       </head>
       <body>

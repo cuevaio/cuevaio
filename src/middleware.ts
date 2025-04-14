@@ -25,7 +25,7 @@ export function middleware(request: NextRequest) {
 
       // For users, redirect to the Notion calendar
       return NextResponse.redirect(
-        "https://calendar.notion.so/meet/anthony-9n45j1rcc/4i9ij3lme"
+        "https://calendar.app.google/AvkEoN2ZSuvr6sWn8"
       );
     }
   }
