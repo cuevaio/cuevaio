@@ -95,10 +95,9 @@ export const HeroSlide = React.forwardRef<
           animate={slideIsInView ? "visible" : "hidden"}
         >
           <p className="md:text-xl">
-            I&apos;M A SOFTWARE ENGINEER OBSESSED WITH USER EXPERIENCE
+            I&apos;M A PRODUCT ENGINEER
           </p>
           <p className="md:text-xl">BUILDING PRODUCTS PEOPLE LOVE</p>
-          <p className="md:text-xl">MOSTLY FOR THE WEB</p>
           <p className="md:text-xl">SINCE 2020</p>
         </motion.div>
       </AnimatePresence>

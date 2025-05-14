@@ -33,21 +33,21 @@ export const ProjectsSlide = React.forwardRef<
     () =>
       [
         {
-          domain: "greatpics.com",
-          title: "GREAT PICS",
-          description: "AI POWERED ALT TEXT GENERATOR",
-          status: "deprecated",
-        },
-        {
-          domain: "classrooms.utec.fyi",
-          title: "UTEC CLASSROOMS",
-          description: "FIND FREE CLASSROOMS IN UTEC",
+          domain: "text0.dev",
+          title: "text0",
+          description: "Absurldy smart and personal autocomplete",
           status: "live",
         },
         {
-          domain: "ez.utec.fyi",
-          title: "HORARIO EZ",
-          description: "GET YOUR SCHEDULE IN YOU CALENDAR WITH EASE",
+          domain: "githunter.dev",
+          title: "GitHunter",
+          description: "Tech talent search engine",
+          status: "live",
+        },
+        {
+          domain: "compy.cueva.io",
+          title: "Compy AI",
+          description: "Shopping AI Assitant",
           status: "live",
         },
         {
@@ -57,16 +57,16 @@ export const ProjectsSlide = React.forwardRef<
           status: "live",
         },
         {
-          domain: "retest.cueva.io",
-          title: "RETEST",
-          description: "PRIVACY FIRST AB TESTING PLATFORM",
+          domain: "trygradual.com",
+          title: "Gradual",
+          description: "AI powered learning platform",
           status: "coming-soon",
         },
         {
-          domain: "supermentor.xyz",
-          title: "SUPERMENTOR",
-          description: "FIND YOUR NEXT MENTOR IN SECONDS",
-          status: "coming-soon",
+          domain: "classrooms.cueva.io",
+          title: "UTEC Classrooms",
+          description: "Find free classrooms in UTEC",
+          status: "deprecated",
         },
       ] satisfies Project[],
     []
