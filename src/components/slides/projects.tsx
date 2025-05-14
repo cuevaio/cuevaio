@@ -51,12 +51,6 @@ export const ProjectsSlide = React.forwardRef<
           status: "live",
         },
         {
-          domain: "enroll.utec.fyi",
-          title: "USCHEDULE",
-          description: "PLAN YOUR SEMESTER IN SECONDS",
-          status: "live",
-        },
-        {
           domain: "trygradual.com",
           title: "Gradual",
           description: "AI powered learning platform",
@@ -66,7 +60,7 @@ export const ProjectsSlide = React.forwardRef<
           domain: "classrooms.cueva.io",
           title: "UTEC Classrooms",
           description: "Find free classrooms in UTEC",
-          status: "deprecated",
+          status: "live",
         },
       ] satisfies Project[],
     []
@@ -102,13 +96,13 @@ export const ProjectsSlide = React.forwardRef<
           <AnimatedText
             el="p"
             className="text-2xl font-bold selection:bg-background"
-            text="I WORK ON"
+            text="I BUILD"
             once
           />
           <AnimatedText
             el="h1"
             className="text-6xl font-bold selection:bg-background"
-            text="COOL PROJECTS"
+            text="COOL PRODUCTS"
           />
         </motion.div>
 
@@ -153,8 +147,6 @@ export const ProjectsSlide = React.forwardRef<
                     <div className="flex items-center space-x-2">
                       <CircleIcon
                         className={cn("w-4 h-4", {
-                          "fill-red-500 stroke-red-500":
-                            project.status === "deprecated",
                           "fill-green-500 stroke-green-500":
                             project.status === "live",
                           "fill-blue-500 stroke-blue-500":
