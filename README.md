@@ -1,20 +1,11 @@
-### About me
+### hello there!
 
-Salut!
-I'm Anthony Cueva, a software engineer based in Peru 🇵🇪
+i'm Anthony, a software engineer building products people love!
 
-### Some Stats
+i recently won the Next.js Global Hackathon [🔗](https://youtu.be/KDRwgbwq0_c?t=1143) building [text0](https://github.com/crafter-station/text0) with [Railly](https://railly.dev/).
 
-<table>
-  <tr>
-    <td align="center" style="padding=0;width=50%;">
-      <img align="center" style="padding=0;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cuevaio&layout=compact&hide=c,css,handlebars,php,glsl,vim%20script,cuda,html,mdx,java&title_color=50C2F7&text_color=E3E1E1&bg_color=1D2126&hide_border=true&icon_color=4F8CC9" />
-    </td>
-    <td align="center" style="padding=0;width=50%;">
-      <img align="center" style="padding=0;" src="https://github-readme-stats.vercel.app/api/wakatime?username=cuevaio&title_color=50C2F7&text_color=E3E1E1&bg_color=1D2126&hide_border=true&icon_color=4F8CC9&show_icons=true&disable_animations=true&custom_title=Weekly%20Stats&langs_count=4" />
-    </td>
-  </tr>
-</table>
+currenty building [gradual](https://trygradual.com/) with my team [Crafter Station](https://crafter-station.com/) 💛
+
 
 > [!NOTE]
-> Visit my site [cueva.io](https://www.cueva.io)
+> visit my site [cueva.io](https://www.cueva.io)
