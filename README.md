@@ -7,7 +7,7 @@ Co-founded [Crafter Station 💛](https://crafterstation.com/), where I'm buildi
 Currently building [Lupa 🔍](https://lupa.build/), the Knowledge Platform for AI Agents
 
 
-Build:
+Built:
 - [text0](https://text0.dev/)
 - [GitHunter](https://githunter.dev/)
 - [Gradual](https://trygradual.com/)
