@@ -43,7 +43,7 @@ const Noise = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     if (!canvasSize) return;
-    const ctx = canvas.getContext("2d");
+    const _ctx = canvas.getContext("2d");
 
     const handleResize = () => {
       setCanvasSize({

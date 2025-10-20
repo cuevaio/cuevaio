@@ -1,14 +1,11 @@
 "use client";
 
+import { CircleIcon } from "lucide-react";
+import { AnimatePresence, motion, useInView } from "motion/react";
 import * as React from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
-
+import useSound from "use-sound";
 import { AnimatedText } from "@/components/animated-text";
 import { buttonVariants } from "@/components/ui/button";
-import { CircleIcon } from "lucide-react";
-
-// @ts-ignore
-import useSound from "use-sound";
 
 import {
   HoverCard,
@@ -25,17 +22,20 @@ type Project = {
   status: ProjectStatus;
 };
 
-export const ProjectsSlide = React.forwardRef<
-  HTMLDivElement,
-  React.ComponentPropsWithoutRef<"div">
->((_, ref) => {
+export const ProjectsSlide = ({ ref }: React.ComponentProps<"section">) => {
   const PROJECTS = React.useMemo(
     () =>
       [
         {
+          domain: "lupa.build",
+          title: "Lupa",
+          description: "Knowledge Platform for AI Agents",
+          status: "live" as ProjectStatus,
+        },
+        {
           domain: "text0.dev",
           title: "text0",
-          description: "Absurldy smart and personal autocomplete",
+          description: "AI Writing Assistant - 1st Place Next.js Hackathon",
           status: "live",
         },
         {
@@ -45,25 +45,25 @@ export const ProjectsSlide = React.forwardRef<
           status: "live",
         },
         {
-          domain: "compy.cueva.io",
-          title: "Compy AI",
-          description: "Shopping AI Assitant",
+          domain: "opendeepresearch.io",
+          title: "Open Deep Research",
+          description: "Open source ChatGPT Deep Research",
           status: "live",
         },
         {
-          domain: "trygradual.com",
-          title: "Gradual",
-          description: "AI powered learning platform",
-          status: "coming-soon",
+          domain: "aifindr.com",
+          title: "AIFindr",
+          description: "B2B platform to create AI Agents",
+          status: "live",
         },
         {
-          domain: "classrooms.cueva.io",
-          title: "UTEC Classrooms",
-          description: "Find free classrooms in UTEC",
+          domain: "instagram.com/reel/DMyiBC3M2DP",
+          title: "Compy AI",
+          description: "Shopping AI Assistant",
           status: "live",
         },
       ] satisfies Project[],
-    []
+    [],
   );
 
   const bottomMessageRef = React.useRef(null);
@@ -78,8 +78,8 @@ export const ProjectsSlide = React.forwardRef<
     once: true,
   });
 
-  // @ts-ignore
-  const slideIsInView = useInView(ref, {
+  const slideRef = React.useRef<HTMLElement>(null);
+  const slideIsInView = useInView(slideRef, {
     amount: 0.5,
   });
 
@@ -89,7 +89,7 @@ export const ProjectsSlide = React.forwardRef<
     <section
       id="projects-section"
       className="relative p-8 md:p-16 h-[100dvh]"
-      ref={ref}
+      ref={slideRef}
     >
       <AnimatePresence>
         <motion.div key="sp-1 ">
@@ -102,7 +102,7 @@ export const ProjectsSlide = React.forwardRef<
           <AnimatedText
             el="h1"
             className="text-6xl font-bold selection:bg-background"
-            text="COOL PRODUCTS"
+            text="COOL AI PRODUCTS"
           />
         </motion.div>
 
@@ -151,6 +151,8 @@ export const ProjectsSlide = React.forwardRef<
                             project.status === "live",
                           "fill-blue-500 stroke-blue-500":
                             project.status === "coming-soon",
+                          "fill-gray-500 stroke-gray-500":
+                            project.status === "deprecated",
                         })}
                       />
                       <span className="text-xs font-bold">
@@ -195,6 +197,6 @@ export const ProjectsSlide = React.forwardRef<
       </AnimatePresence>
     </section>
   );
-});
+};
 
 ProjectsSlide.displayName = "ProjectsSlide";

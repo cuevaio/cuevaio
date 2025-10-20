@@ -6,11 +6,11 @@ import {
   useAnimation,
   Variant,
   AnimatePresence,
-} from "framer-motion";
+} from "motion/react";
 
 type AnimatedTextProps = {
   text: string | string[];
-  el?: keyof JSX.IntrinsicElements;
+  el?: keyof React.JSX.IntrinsicElements;
   className?: string;
   once?: boolean;
   repeatDelay?: number;
