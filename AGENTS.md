@@ -22,4 +22,3 @@
 - Next.js 15, React 19, TypeScript 5
 - UI: Radix UI, Tailwind CSS, class-variance-authority, lucide-react
 - Animation: motion (Framer Motion), use-sound
-- Hi
