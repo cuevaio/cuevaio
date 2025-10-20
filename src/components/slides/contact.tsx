@@ -1,25 +1,19 @@
 "use client";
 
-import * as React from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
-
-import { AnimatedText } from "@/components/animated-text";
-import { buttonVariants } from "@/components/ui/button";
 import { MailIcon } from "lucide-react";
-
-import { LinkedInIcon } from "@/components/icons/ui/linkedin";
-import { XIcon } from "@/components/icons/ui/x";
-import { GithubIcon } from "@/components/icons/ui/github";
-
-// @ts-ignore
+import { AnimatePresence, motion, useInView } from "motion/react";
+import * as React from "react";
 import useSound from "use-sound";
+import { AnimatedText } from "@/components/animated-text";
+import { GithubIcon } from "@/components/icons/github";
+import { InstagramIcon } from "@/components/icons/instagram";
+import { LinkedInIcon } from "@/components/icons/linkedin";
+import { XIcon } from "@/components/icons/x";
+import { buttonVariants } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
 
-export const ContactSlide = React.forwardRef<
-  HTMLDivElement,
-  React.ComponentPropsWithoutRef<"div">
->((_, ref) => {
+export const ContactSlide = ({ ref }: React.ComponentProps<"section">) => {
   const bottomMessageRef = React.useRef(null);
   const bottomMessageIsInView = useInView(bottomMessageRef, {
     amount: 0.5,
@@ -34,8 +28,8 @@ export const ContactSlide = React.forwardRef<
 
   const [play] = useSound("/sounds/bite.mp3", { volume: 0.5 });
 
-  // @ts-ignore
-  const slideIsInView = useInView(ref, {
+  const slideRef = React.useRef<HTMLElement>(null);
+  const slideIsInView = useInView(slideRef, {
     amount: 0.5,
   });
 
@@ -43,7 +37,7 @@ export const ContactSlide = React.forwardRef<
     <section
       id="socials-section"
       className="relative p-8 md:p-16 h-[100dvh]"
-      ref={ref}
+      ref={slideRef}
     >
       <AnimatePresence>
         <motion.div key="sp-1 ">
@@ -63,7 +57,7 @@ export const ContactSlide = React.forwardRef<
         <motion.div
           ref={socialsContainerRef}
           key="sp-2"
-          className="mt-8 md:mt-16 flex gap-8"
+          className="mt-8 md:mt-16 flex flex-wrap gap-8"
           variants={{
             hidden: {
               opacity: 0,
@@ -130,6 +124,20 @@ export const ContactSlide = React.forwardRef<
           >
             <GithubIcon className="w-6 h-6" />
           </motion.a>
+
+          <motion.a
+            className={cn(buttonVariants({ variant: "default" }), "h-16 w-16")}
+            onClick={async () => {
+              play();
+              await new Promise((r) => setTimeout(r, 100));
+            }}
+            whileTap={{ scale: 0.9 }}
+            href="https://www.instagram.com/cueva.io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <InstagramIcon className="w-6 h-6" />
+          </motion.a>
         </motion.div>
 
         <motion.div
@@ -158,10 +166,20 @@ export const ContactSlide = React.forwardRef<
         >
           <p className="md:text-xl">I&apos;M ALWAYS OPEN TO NEW PROJECTS</p>
           <p className="md:text-xl">COME SAY HI!</p>
+          <motion.a
+            className={buttonVariants({ variant: "outline" })}
+            href="https://go.cueva.io/resume"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => play()}
+            whileTap={{ scale: 0.9 }}
+          >
+            VIEW MY RESUME
+          </motion.a>
         </motion.div>
       </AnimatePresence>
     </section>
   );
-});
+};
 
 ContactSlide.displayName = "ProjectsSlide";

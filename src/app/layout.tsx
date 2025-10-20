@@ -1,13 +1,17 @@
-export const runtime = 'edge';
-
 import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
-import { cn } from "@/lib/utils";
-import { Fathom } from "@/components/fathom";
 import Noise from "@/components/noise";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Anthony Cueva (cueva.io)",
@@ -26,20 +30,6 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Anthony Cueva",
-  url: "https://cueva.io",
-  sameAs: [
-    "https://www.linkedin.com/in/cuevaio",
-    "https://www.x.com/cuevaio",
-    "https://www.github.com/cuevaio",
-  ],
-  email: "hi@cueva.io",
-  jobTitle: "Software Engineer",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -47,19 +37,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(GeistMono.variable, GeistSans.variable)}>
-        <Fathom />
-        <div className="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-20 z-[9999] pointer-events-none">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <div className="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-20 z-9999 pointer-events-none">
           <Noise />
         </div>
         {children}
-        <section>
-          {/* Add JSON-LD to your page */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
-        </section>
       </body>
     </html>
   );

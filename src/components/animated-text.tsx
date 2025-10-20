@@ -6,7 +6,7 @@ import {
   useAnimation,
   Variant,
   AnimatePresence,
-} from "framer-motion";
+} from "motion/react";
 
 type AnimatedTextProps = {
   text: string | string[];
