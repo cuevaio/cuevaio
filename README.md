@@ -1,9 +1,3 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
-  <img alt="cuevaio's GitHub profile" src="dark_mode.svg" />
-</picture>
-
 ### Hello there!
 
 I'm Anthony, a software engineer from Lima, Perú 🇵🇪
@@ -16,18 +10,18 @@ I’ve spent the last years deep in the technical side: building systems that de
 
 These days, I’m focused on turning that technical depth into products people actually use.
 
-Currently building [Tab](https://github.com/crafter-station/tab), private AI autocomplete for MacOS.
+Currently building [Humans](https://github.com/crafter-station/humans), Clay for devs.
 
 Co-founder of [Crafter Station 💛](https://crafterstation.com/), a LatAm community spreading shipping culture through hackathons and builder-first events.
 
 Other things I’ve built:
-* [Normal](http://github.com/cuevaio/normal) - WhatsApp automation platform
+* [Normal](http://github.com/cuevaio/normal) - WhatsApp MCP
 * [Local Background Remover](https://local.backgroundrm.com/) — remove image backgrounds locally, pay once
 * [OpenCoder](https://opencoder.cueva.io/) — run opencode in the cloud
 * [text0](https://text0.dev/) — Cursor for writers, Vercel Hackathon winner
 * [Lupa 🔍](https://lupa.build/) — Knowledge Platform for AI Agents
 
-You should also meet [Shiara](https://github.com/shiarauzo), [Railly](https://github.com/railly/), [Cris](https://github.com/camilocbarrera), and [Nico](https://github.com/MrUprizing).
+You should also meet [Shiara](https://github.com/shiarauzo) and [Jibaru](https://github.com/jibaru/)
 
 > [!note]
 > Visit my site [cueva.io](https://www.cueva.io)
